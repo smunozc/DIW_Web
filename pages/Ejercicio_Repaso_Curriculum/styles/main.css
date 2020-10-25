@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    margin-top: 20px;
+    text-align: center;
+}
+
+main, header, footer{
+    width: 100%;
+}
+
+/* Width for main child boxes */
+.training, .professionalExperience, .personalData, .pictures{
+    border: 1px solid black;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.personalData{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.personalData h2, .pictures h2, .training h2, .professionalExperience h2{
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.personalData table{
+    width: 70%;
+}
+
+.profilePic{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    text-align: center;
+    width: 30%;
+}
+
+#download{
+    font-size: 1rem;
+}
+
+.profilePic a img{
+    width: 150px;
+}
+
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Grey border for pictures */
+.pictures img, .personalData img{
+    border: 3px;
+    border-style: outset;
+    border-color: rgb(170, 170, 170);
+}
+
+.pictures img{
+    width: 300px;
+}
+
+.Author{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+}

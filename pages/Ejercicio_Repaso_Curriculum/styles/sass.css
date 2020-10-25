@@ -1,0 +1,49 @@
+/* Erase default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+/* Change font size for every element inside the container */
+.container {
+  background-color: white;
+  font-size: 1.1rem;
+  color: black;
+}
+.container main > div {
+  background-color: #ebf0ff;
+  padding: 30px;
+}
+.container h2 {
+  color: #5c87ff;
+}
+
+/* Breakpoints */
+@media (min-width: 576px) {
+  main {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  main .personalData img {
+    margin-top: 20px;
+  }
+  main .pictures img {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=sass.css.map */

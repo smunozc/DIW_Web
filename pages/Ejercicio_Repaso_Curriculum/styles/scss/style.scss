@@ -1,0 +1,54 @@
+//import
+@import "variables.scss";
+@import "functions.scss";
+
+/* Erase default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+/* Change font size for every element inside the container */
+.container {
+    background-color: $color-fondo;
+    font-size: $font-size-movil;
+    color: $color-fuente;
+
+    main > div{
+        background-color: $color-fondo-seccion;
+        padding: 30px;
+    }
+
+    h2 {
+        color: $color-h2;
+    }
+}
+
+/* Breakpoints */
+@media (min-width: $breakpoint-tablet) {
+    main {
+        width: calcularAnchura($breakpoint-tablet);
+        font-size: $font-size-tablet;
+        .personalData .profilePic img{
+            margin-top: 20px;
+        }
+        .pictures img{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-pc) {
+    main {
+        width: calcularAnchura($breakpoint-pc);
+        display: $display-main-pc;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: $font-size-pc;
+    }
+}

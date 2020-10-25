@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+/*Margin y padding reset*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*Fuente de letra para la pagina y anchura*/
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+/*Header*/
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+/*Main*/
+
+/*Seccion*/
+.seccion {
+    background-color: rgb(202, 220, 255);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/*Descripcion*/
+.descripcion {
+    margin-bottom: 20px;
+}
+
+.descripcion p {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.descripcion img {
+    margin-left: 30%;
+    width: 40%;
+}
+
+/*Enlace Ejercicios*/
+/*Texto*/
+#enlace-ejercicios p {
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+/*Botones*/
+.btn {
+    background-color: rgb(89, 161, 255);
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 60%;
+}
+
+/*Botón hover*/
+.btn:hover {
+    background-color: rgb(8, 90, 197);
+    color: white;
+}
+
+/*Lista*/
+.list {
+
+    width: 90%;
+}
+
+.list li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Tablas*/
+.tables{
+    margin: 0 auto;
+    width: 90%;
+}
+.tables, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tables th, .tables td{
+    padding: 10px;
+}
+.tables th{
+    text-align: start;
+}
+.tables td{
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    font-size: 1.2rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/*Texto del footer*/
+footer p {
+    text-align: center;
+    margin-bottom: 10px;
+}

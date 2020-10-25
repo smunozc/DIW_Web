@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header {
+    padding: 50px;
+    width: 90%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: start;
+    width: 90%;
+}
+
+main div {
+    font-size: 1.1rem;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+main div h2 {
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main div ul {
+    list-style: none;
+}
+
+main div ul li strong {
+    color: black;
+    display: block;
+}
+
+.formacionAcademica ul,
+.experienciaLaboral ul {
+    color: blue;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        font-size: 1.3rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        grid-template-rows: auto auto;
+        column-gap: 50px;
+    }
+
+    main div {
+        font-size: 1.4rem;
+    }
+
+    main div h2 {
+        border: none;
+    }
+
+    .datosPersonales {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .formacionAcademica {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .formacionAcademica ul {
+        list-style: disc;
+    }
+
+    .experienciaLaboral {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .experienciaLaboral ul {
+        list-style: disc;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    main div ul {
+        list-style: disc;
+    }
+
+    main div ul li strong {
+        display: unset;
+    }
+}
