@@ -1,0 +1,135 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 350px 350px auto;
+        height: 1024px;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    header {
+        border-right: 1px solid black;
+        display: grid;
+        grid-template-rows: 180px auto;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        justify-content: center;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    header h1 {
+        border-bottom: 1px solid black;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    main {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    footer {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .seccion {
+        border-radius: 0;
+        background-color: unset;
+        width: 100%;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .descripcion {
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .descripcion h2 {
+        order: 2;
+        width: 70%;
+    }
+
+    .descripcion #profilepic {
+        margin-left: 0;
+        margin-right: 30px;
+        order: 1;
+        width: 15%;
+    }
+
+    .descripcion img {
+        width: 25%;
+    }
+
+    .descripcion p {
+        text-align: start;
+        font-size: 1.2rem;
+        order: 3;
+        width: 85%
+    }
+
+    #ftp {
+        display: flex;
+        flex-wrap: wrap;
+        height: 50%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #ftp h2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #ftp a{
+        width: 80%
+    }
+
+    #ftp a img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .btn {
+        margin: 0;
+        margin-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0;
+        padding-left: 0;
+        width: 130px;
+    }
+
+    .stars{
+        margin-top: 20px;
+    }
+
+}

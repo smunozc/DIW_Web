@@ -19,11 +19,32 @@ body {
     width: 100%;
 }
 
+/*Imagen de perfil*/
+
+#profilepic {
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 40%;
+}
+
 /*Header*/
 
 header {
     text-align: center;
     margin: 20px;
+}
+
+.nav{
+    background-color: unset;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
 }
 
 /*Main*/
@@ -54,8 +75,10 @@ header {
 }
 
 .descripcion img {
-    margin-left: 30%;
-    width: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 30%;
 }
 
 /*Enlace Ejercicios*/
@@ -63,6 +86,11 @@ header {
 #enlace-ejercicios p {
     margin: 5px;
     margin-bottom: 20px;
+}
+
+/*FTP*/
+#ftp {
+    display: none;
 }
 
 /*Botones*/
@@ -84,12 +112,17 @@ header {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    /*animación*/
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+    z-index: 1;
     width: 60%;
 }
 
 /*Botón hover*/
 .btn:hover {
-    background-color: rgb(8, 90, 197);
+    background-color: rgb(0, 88, 202);
+    box-shadow: 0 8px 10px 0 rgb(0, 27, 63), 0 6px 20px 0 rgb(0, 27, 63);
     color: white;
 }
 
@@ -105,21 +138,28 @@ header {
 }
 
 /*Tablas*/
-.tables{
+.tables {
     margin: 0 auto;
     width: 90%;
 }
-.tables, th, td{
+
+.tables,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-.tables th, .tables td{
+
+.tables th,
+.tables td {
     padding: 10px;
 }
-.tables th{
+
+.tables th {
     text-align: start;
 }
-.tables td{
+
+.tables td {
     text-align: center;
 }
 

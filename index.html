@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repaso CSS & HTML</title>
     <link rel="stylesheet" href="./styles/styles-general.css">
+    <link rel="stylesheet" href="./styles/tablet-general.css">
+    <link rel="stylesheet" href="./styles/pc-general.css">
     <style>
         @import "styles/style.css";
 
@@ -18,20 +20,30 @@
 <body>
     <header>
         <h1 style="font-size: 2.2rem;">Salvador Muñoz Cordero</h1>
+        <nav id="enlace-ejercicios" class="nav">
+            <a href="./pages/ejercicios.html" class="btn">Ejercicios de repaso</a>
+            <a href="./pages/modulos.html" class="btn">Listado de módulos</a>
+        </nav>
+        <div id="borde-bot"></div>
     </header>
     <main>
         <section class="seccion descripcion">
-            <p>Página del alumno</p>
-            <img src="./img/hombre.png" alt="profile pic">
+            <h2>Página del alumno</h2>
+            <img src="./img/profilepic.jpg" id="profilepic" alt="profile pic">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quidem assumenda impedit nostrum nihil
+                illo debitis omnis, dolorum deserunt maxime vel earum iure autem sint numquam sit reiciendis laudantium
+                dolorem perferendis eaque exercitationem quibusdam. Molestiae.</p>
         </section>
-        <section id="enlace-ejercicios" class="seccion">
-            <a href="./pages/ejercicios.html" class="btn">Ejercicios de repaso</a>
-            <a href="./pages/modulos.html" class="btn">Listado de módulos</a>
+        <section class="seccion" id="ftp">
+            <h2>FTP</h2>
+            <a href="./captura_FTP/ftp-simple.png"><img src="./captura_FTP/ftp-simple.png" alt="captura FTP"></a>
         </section>
     </main>
     <footer>
+        <div id="borde-bot"></div>
         <p>Página de Salvador Muñoz Cordero</p>
-        <p>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+        <p>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
     </footer>
 </body>
 
